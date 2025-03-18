@@ -1,0 +1,219 @@
+.outer-div {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: skyblue;
+    background: linear-gradient(to top, skyblue, white);
+}
+
+.containar {
+    height: 65%;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.top-bar {
+    height: 8%;
+    width: 100%;
+    background-color: rgb(176, 176, 176);
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    .fa-solid{
+        margin-left: 15px;
+    }
+}
+
+.circle-list{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+
+    #circle {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: tomato;
+        margin-left: 10px;
+    }
+
+    #circle1 {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: yellow;
+        margin-left: 10px;
+    }
+
+    #circle2 {
+        width: 20px;
+        height: 20px;
+        border-radius: 100%;
+        background-color: greenyellow;
+        margin-left: 10px;
+    }
+}
+
+.search-box{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 5%;
+    margin-right: 10px;
+
+    #search-bar {
+        width: 80%;
+        height: 22px;
+        border-radius: 10px;
+        background-color: white;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+    
+        .fa-solid{
+            margin-right: 10px;
+        }
+    }
+}
+
+.main {
+    height: 92%;
+    background-color: white;
+    border-radius: 0 0 15px 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box{
+    height: 80%;
+    width: 40%;
+}
+
+.info{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+
+.info1{
+    height: 80%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+}
+
+
+.info-box{
+    height: 35%;
+    width: 90%;
+    margin: 10px 0 5px 0;
+    border-radius: 10px;
+    background-color: rgba(164, 201, 223, 0.493);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: end;
+    align-self: center;
+}
+
+.info-box2{
+    height: 30%;
+    width: 90%;
+    margin: 10px 0 5px 0;
+    border-radius: 10px;
+    border-color:antiquewhite;
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+}
+
+.folder-list{
+    display: flex;
+    flex-direction: row;
+    margin: 1% 0 1% 0;
+}
+
+@font-face {
+    font-family: 'GongGothicMedium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10@1.0/GongGothicMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+span {
+    font-size: 15px;
+    font-family : 'GongGothicMedium';
+    margin: 5px 5px 5px 20px;
+}
+
+.main-text {
+    font-size: 18px;
+    font-family : 'GongGothicMedium';
+    margin: 10px 0 2px 20px;
+}
+
+p {
+    font-size: 12px;
+    font-family : 'GongGothicMedium';
+}
+
+@media (max-height: 500px) {
+    .containar{
+        height: auto;
+    }
+    .main{
+        padding: 10px 0 10px 0;
+    }
+    .top-bar {
+        padding: 5px 0 5px 0;
+    }
+}
+
+@media (max-width: 900px) {
+    p{
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 700px) {
+    .containar{
+        height: auto;
+    }
+    .main{
+        padding: 10px 0 30px 0;
+    }
+    .top-bar {
+        padding: 5px 0 5px 0;
+    }
+    .main-text {
+        font-size: 14px;
+    }
+    .circle-list{
+        display: none;
+    }
+    span{
+        font-size: 11px;
+    }
+    p{
+        display: none;
+    }
+}
